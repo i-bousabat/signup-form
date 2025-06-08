@@ -1,0 +1,114 @@
+/* reset ----------------------------------------------------------------------------------*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+  /* reset ----------------------------------------------------------------------------------*/
+
+body {
+    font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+img {
+    height: 130vh;
+    width: auto;
+}
+
+h2 {
+    margin: 10px;
+}
+
+form {
+    font-size: 0.95rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
+}
+
+.row{
+    display: flex;
+    gap: 60px
+}
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    flex: 1;
+}
+
+.right > form {
+    height: 40vh;
+}
+
+.top, .bottom {
+    background-color: #f2f2f2;
+    height: 30vh;
+}
+
+button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: fit-content;
+    color: white;
+    background-color: #17468b;
+    text-align: center;
+    border-radius: 5px;
+    padding: 7px 30px 7px 30px;
+    margin-bottom: 5%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.field {
+    font-size: 0.95rem;
+    padding-bottom: 7px;
+}
+
+.button-row{
+    position: absolute;
+    bottom: -100px;
+    
+}
+
+span{
+    color: #17468b;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* optional: makes link use parent text color */
+  }
