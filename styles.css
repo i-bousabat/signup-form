@@ -31,50 +31,66 @@
   /* reset ----------------------------------------------------------------------------------*/
 
 body {
-    font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    font-family:'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
     display: flex;
     height: 100vh;
     overflow: hidden;
 }
 
 img {
-    height: 130vh;
+    height: 120vh;
     width: auto;
 }
 
-h2 {
+.top{
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+}
+
+form h2 {
     margin: 10px;
+    margin-left: 0;
 }
 
 form {
+    color: rgb(63, 62, 62);
     font-size: 0.95rem;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 40px;
+    padding-left: 5rem;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
 }
 
 .row{
     display: flex;
-    gap: 60px
+    gap: 60px;
+    gap: 5rem;
 }
 .field {
     display: flex;
     flex-direction: column;
+    font-size: 0.95rem;
+    padding-bottom: 7px;
 }
+
+label{
+    font-weight: 500;
+}
+
 
 .right {
     flex: 1;
 }
 
-.right > form {
+form {
     height: 40vh;
 }
 
 .top, .bottom {
-    background-color: #f2f2f2;
+    background-color: rgb(246, 247, 248);
     height: 30vh;
 }
 
@@ -92,14 +108,9 @@ button {
     border: none;
 }
 
-.field {
-    font-size: 0.95rem;
-    padding-bottom: 7px;
-}
-
 .button-row{
     position: absolute;
-    bottom: -100px;
+    bottom:-7rem;
     
 }
 
@@ -110,5 +121,19 @@ span{
 
 a {
     text-decoration: none;
-    color: inherit; /* optional: makes link use parent text color */
+    color: inherit;
+  }
+
+input:focus {
+    border: 2px solid rgb(34, 133, 199);
+    box-shadow: 0 0 12px rgba(34, 133, 199, 0.25);
+    outline: none;
+  }
+
+button:hover {
+    cursor: pointer;
+}
+
+input:valid:not(:focus) {
+    border: 2px solid rgb(64, 212, 113);
   }
